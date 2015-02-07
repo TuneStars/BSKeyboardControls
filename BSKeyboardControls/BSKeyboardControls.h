@@ -90,7 +90,7 @@ typedef enum
 /**
  *  Tint color of the done button.
  */
-@property (nonatomic, strong) UIColor *doneTintColor;
+@property (nonatomic, strong) UIColor *buttonsTintColor;
 
 /**
  *  Initialize keyboard controls.

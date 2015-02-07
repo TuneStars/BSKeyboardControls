@@ -94,7 +94,7 @@
     [self setBarTintColor:nil];
     [self setNextTitle:nil];
     [self setDoneTitle:nil];
-    [self setDoneTintColor:nil];
+    [self setButtonsTintColor:nil];
     [self setActiveField:nil];
     [self setToolbar:nil];
     [self setRightArrowButton:nil];
@@ -208,13 +208,15 @@
     }
 }
 
-- (void)setDoneTintColor:(UIColor *)doneTintColor
+- (void)setButtonsTintColor:(UIColor *)buttonsTintColor
 {
-    if (doneTintColor != _doneTintColor)
+    if (buttonsTintColor != _buttonsTintColor)
     {
-        [self.doneButton setTintColor:doneTintColor];
+        [self.doneButton setTintColor:buttonsTintColor];
+        [self.leftArrowButton setTintColor:buttonsTintColor];
+        [self.rightArrowButton setTintColor:buttonsTintColor];
         
-        _doneTintColor = doneTintColor;
+        _buttonsTintColor = buttonsTintColor;
     }
 }
 

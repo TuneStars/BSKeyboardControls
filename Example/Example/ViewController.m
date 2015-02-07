@@ -51,6 +51,7 @@ enum
     
     [self setKeyboardControls:[[BSKeyboardControls alloc] initWithFields:fields]];
     [self.keyboardControls setDelegate:self];
+    self.keyboardControls.buttonsTintColor = [UIColor yellowColor];
 }
 
 - (void)viewDidUnload
